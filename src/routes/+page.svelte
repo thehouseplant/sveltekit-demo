@@ -9,8 +9,8 @@
   });
 </script>
 
-<main class="grid h-screen place-content-center">
-  <h1 class="fontt-bold underline">
+<div>
+  <h1>
     Top
   </h1>
 
@@ -18,7 +18,11 @@
     Loading stories...
   {:else}
     {#each stories as story}
-      {story.title}<br />
+      <div class="mx-auto max-w-xlg rounded-lg bg-white shadow mb-6">
+        <div class="p-4">
+          {story.title}
+        </div>
+      </div>
     {/each}
   {/if}
-</main>
+</div>
