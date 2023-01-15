@@ -20,7 +20,10 @@
     {#each stories as story}
       <div class="mx-auto max-w-xlg rounded-lg bg-white shadow mb-6">
         <div class="p-4">
-          {story.title}
+          {story.title} ({ story.domain })<br />
+          {story.points} points
+          by {story.user} | 
+          Posted { story.time_ago } | {story.comments_count} comments
         </div>
       </div>
     {/each}
