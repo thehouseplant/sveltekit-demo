@@ -9,14 +9,16 @@
   });
 </script>
 
-<h1 class="text-3xl font-bold underline">
-  Top
-</h1>
+<main class="grid h-screen place-content-center">
+  <h1 class="fontt-bold underline">
+    Top
+  </h1>
 
-{#if stories === undefined}
-  Loading stories...
-{:else}
-  {#each stories as story}
-    {story.title}<br />
-  {/each}
-{/if}
+  {#if stories === undefined}
+    Loading stories...
+  {:else}
+    {#each stories as story}
+      {story.title}<br />
+    {/each}
+  {/if}
+</main>
